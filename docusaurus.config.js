@@ -13,6 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  themes: ['@docusaurus/theme-live-codeblock'],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -52,6 +53,17 @@ const config = {
       }),
     ],
   ],
+
+  // plugins: ['@docusaurus/theme-live-codeblock'],
+  // themeConfig: {
+  //   liveCodeBlock: {
+  //     /**
+  //      * The position of the live playground, above or under the editor
+  //      * Possible values: "top" | "bottom"
+  //      */
+  //     playgroundPosition: 'top',
+  //   },
+  // },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -127,6 +139,20 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  
 };
 
 module.exports = config;
+
+// module.exports = {
+//   plugins: ['@docusaurus/theme-live-codeblock'],
+//   themeConfig: {
+//     liveCodeBlock: {
+//       /**
+//        * The position of the live playground, above or under the editor
+//        * Possible values: "top" | "bottom"
+//        */
+//       playgroundPosition: 'bottom',
+//     },
+//   },
+// };
