@@ -294,7 +294,7 @@ db.inventory.updateMany({cost:{$lte: 500}}, {$set: {discount:false}})
 
 The write concern for this operation should look like this: 
 
-```
+```js
 
 {
 
@@ -317,7 +317,7 @@ The write concern for this operation should look like this:
 
 The replaceOne() method is ideal if you intend to replace an entire document at once.
 
-```
+```jsx
 db.inventory.replaceOne({item: "rug"}, {item:"headphone", discount: true})
 ```
 
@@ -331,7 +331,7 @@ The delete operations are atomic transactions that only affect a single collecti
 
 The `deleteOne()` method takes in a query parameter that filters and deletes a document in your collection. Take note that this operation deletes the first record in the collection. 
 
-```
+```jsx
 
 db.inventory.deleteOne({item:'carpet'})
 
@@ -350,10 +350,8 @@ The write concern:
 
 The deleteMany() method is used for deleting multiple documents in a collection. The operation takes in a query, then filters and deletes the documents matching the query.
 
-```
-
+```jsx
 db.inventory.deleteMany({discount: false})
-
 ```
 
 
@@ -363,26 +361,3 @@ db.inventory.deleteMany({discount: false})
 
 * Conclusion
 * CTA to Github quickstart page 
-
-```jsx
-function Clock(props) {
-  const [date, setDate] = useState(new Date());
-  useEffect(() => {
-    const timerID = setInterval(() => tick(), 1000);
-
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
-
-  function tick() {
-    setDate(new Date());
-  }
-
-  return (
-    <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
-    </div>
-  );
-}
-```
