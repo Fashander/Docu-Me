@@ -254,7 +254,7 @@ The `updateOne()` method takes a query parameter and updates a single document i
 db.collection.updateOne({&lt;query-params>}, {$set: {&lt;update fields>}})
 
 ```
-
+changing this and that.
 ```
 
 db.inventory.updateOne({item:'rug'}, {$set: {qty:3}})
@@ -292,9 +292,9 @@ db.inventory.updateMany({cost:{$lte: 500}}, {$set: {discount:false}})
 
 ```
 
-The write concern for this operation should look like this: 
+The write concern for this operation should look like this and this: 
 
-```js
+```bash
 
 {
 
@@ -339,7 +339,7 @@ db.inventory.deleteOne({item:'carpet'})
 
 The write concern:
 
-```
+```bash
 
 { acknowledged: true, deletedCount: 1 }
 
