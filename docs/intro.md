@@ -4,6 +4,11 @@ sidebar_position: 1
 
 # Tutorial Intro
 
+## New test section
+
+
+-------------------------------
+
 Let's discover how to use **Docusaurus in less than 5 minutes**.
 
 ## Getting Started
