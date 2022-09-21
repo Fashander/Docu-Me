@@ -14,6 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   themes: ['@docusaurus/theme-live-codeblock'],
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
